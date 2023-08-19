@@ -1,1 +1,17 @@
-# CS-465
+# CS-465: Full Stack Development I
+
+### Architecture
+We used Express HTML and an Angular single-page application (SPA) in our full-stack project. Express HTML made rendering views and delivering static content on the front-end, customer-facing website simple. This method is server-rendered, meaning the server generates the HTML content. On the other hand, our back-end admin interface was designed with Angular, a robust framework for SPAs. In contrast to the server-rendered technique, Angular SPA renders content on the client side. As a result, it is highly interactive and capable of delivering dynamic material without needing a full page reload. JavaScript was used extensively in both configurations, but its use varied. JavaScript primarily managed request-response cycles and directed traffic in Express, but it was critical for data-binding, component interaction, and routing in Angular.
+
+Because of its flexibility in managing data structures, we chose MongoDB, a NoSQL database, for the backend. We are not restricted to a rigid structure with MongoDB, which makes it easier to adapt changes or additions to our data model. Furthermore, its document-oriented nature makes it compatible with JSON-like documents, allowing for a more seamless interface between our back-end and front-end. Given our project's erratic scalability requirements, MongoDB's horizontal scaling features were helpful.
+
+### Functionality
+JSON (JavaScript Object Notation) is a lightweight data-interchange format that is simple for humans to read and write and for machines to parse and generate. While JavaScript is a full-fledged computer language, JSON is a data structure representation format. JSON was crucial in allowing the front-end and back-end to communicate during our full-stack development. Data from our MongoDB was frequently provided to the front end as JSON, parsed by JavaScript in our Angular SPA before being displayed or processed.
+
+We discovered that several UI elements, like buttons and modals, were being replicated across different portions of our program during development. We refactored our code to build reusable UI components to improve efficiency. This decreased redundancy while also making the codebase more maintainable. If a modification were required for a specific UI element, upgrading the central component would ensure consistency and reduce potential problems throughout the program.
+
+### Testing
+API endpoints promote communication between the front-end and back-end of a full stack application. The type of operation executed is determined by HTTP methods such as GET, POST, PUT, and DELETE. Testing these endpoints is critical to ensuring data integrity and proper functionality. Testing becomes more challenging by adding security layers such as authentication and permission. This is because some endpoints may require specific permissions or token validations. A robust testing suite should simulate numerous scenarios, including illegal access attempts, to determine the application's resilience and security.
+
+### Reflection
+This course has greatly aided my understanding of full-stack programming. Working with the MEAN stack hands-on has given me real experience that supplements my academic knowledge. I've learned how to create, construct, and test full-fledged apps while assuring functionality and security. Among the various skills I've acquired are building reusable components, connecting with databases, and implementing client-server communication. These skills make me a more versatile and marketable candidate, ready to take on various tasks in the ever-changing tech sector.
